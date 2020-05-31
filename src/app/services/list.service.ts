@@ -12,7 +12,7 @@ export class ListService {
     this.selectedOptions = 'bmw';
   }
     getCars(make) {
-      return this.http.get('http://localhost/server/listapi.php?make=' + make);
+      return this.http.get('http://auto-val.com/server/listapi.php?make=' + make);
     }
     updateList(selectedOptions: string) {
 
