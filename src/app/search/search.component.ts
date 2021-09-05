@@ -55,7 +55,7 @@ export class SearchComponent implements OnInit {
       this.myForm = this.fb.group({
           carMake: '',
           model: '',
-          priceFrom: '5000',
+          priceFrom: '5500',
           priceTo: '',
           startYear: '2010',
           endYear: ''
