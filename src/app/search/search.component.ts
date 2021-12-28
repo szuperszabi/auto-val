@@ -38,7 +38,7 @@ export class SearchComponent implements OnInit {
     addDetails(url) {
         this.searchService.addDetailsService(url).subscribe(details => {
             this.details = details;
-            console.log(details);
+            console.log('sss', details);
     });
   }
 

@@ -10,7 +10,7 @@ export class SearchService {
     selectedOptions: any;
     carMakes: any;
   constructor(private http: HttpClient) { }
-    baseUrl = 'http://auto-val.com/server';
+    baseUrl = 'https://auto-val.com/server';
     getAllMakes() {
         return this.http.get(this.baseUrl + '/initapi.php');
   }

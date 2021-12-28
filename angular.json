@@ -138,5 +138,8 @@
       }
     }
   },
-  "defaultProject": "auto-val"
+  "defaultProject": "auto-val",
+  "cli": {
+    "analytics": "08657062-d01d-4c46-8fdf-7260c73c5960"
+  }
 }
