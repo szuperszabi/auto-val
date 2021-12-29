@@ -17,6 +17,7 @@ import { SearchComponent } from './search/search.component';
 import { ListComponent } from './list/list.component';
 import { ProductComponent } from './product/product.component';
 import { CommonModule } from '@angular/common';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { CommonModule } from '@angular/common';
     NavComponent,
     SearchComponent,
     ListComponent,
-    ProductComponent
+    ProductComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

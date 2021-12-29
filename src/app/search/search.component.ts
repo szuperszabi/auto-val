@@ -1,6 +1,7 @@
 import { Component, OnInit,  EventEmitter, Output  } from '@angular/core';
 import { SearchService } from '../services/search.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import {any} from 'codelyzer/util/function';
 
 @Component({
@@ -15,11 +16,21 @@ export class SearchComponent implements OnInit {
     models: any;
     cars: any;
     details: any;
+    siteturl: any;
 
     myForm: FormGroup;
   constructor(private  searchService: SearchService, private fb: FormBuilder) {
 
-
+      console.log(window.location.pathname);
+      if (window.location.pathname === '/contact') {
+        this.siteturl = 'contact';
+      }
+      else if (window.location.pathname === '/about') {
+      this.siteturl = 'about';
+    }
+      else {
+        this.siteturl = '';
+      }
       this.searchService.getAllMakes().subscribe(makes => {
           this.makes = makes;
           console.log(makes);
