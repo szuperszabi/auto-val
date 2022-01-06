@@ -28,6 +28,9 @@ export class SearchComponent implements OnInit {
       else if (window.location.pathname === '/about') {
       this.siteturl = 'about';
     }
+      else if (window.location.pathname === '/cars') {
+      this.siteturl = 'cars';
+    }
       else {
         this.siteturl = '';
       }

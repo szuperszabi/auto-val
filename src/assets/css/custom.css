@@ -1,8 +1,37 @@
-/* 
+/*
 
 1. Add your custom Css styles below
-2. Place the this code in your template: 
+2. Place the this code in your template:
 
  <link href="css/custom.css" rel="stylesheet">
 
 */
+.icon-bar {
+  width: 100%;
+  background-color:  rgba(85,85,85,0.5);;
+  overflow: hidden;
+  position: fixed;
+  top:0px;
+  z-index: 100;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #2250fc;
+}

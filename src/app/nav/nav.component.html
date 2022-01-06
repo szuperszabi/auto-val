@@ -1,39 +1,19 @@
 <!-- Header -->
-  <header id="header" data-fullwidth="true">
-    <div class="header-inner">
-      <div class="container">
-        <!--Logo-->
-        <div id="logo">
-          <a href="index.html" class="logo" data-src-dark="assets/images/logo-dark.png">
-            <img src="assets/images/logo.png" alt="Polo Logo">
-          </a>
-        </div>
-        <!--End: Logo-->
 
-        <!--Navigation Resposnive Trigger-->
-        <div id="mainMenu-trigger">
-          <button class="lines-button x"> <span class="lines"></span> </button>
-        </div>
-        <!--end: Navigation Resposnive Trigger-->
 
-        <!--Navigation-->
-        <div id="mainMenu" class="light">
-          <div class="container">
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Home</a></li>
-              </ul>
 
-            </nav>
-          </div>
-        </div>
-        <!--end: Navigation-->
-      </div>
+    <!-- Header -->
+    <div class="icon-bar">
+      <a [ngClass]="isUrl== '' ? 'active' : 'not_active'" href="#" alt="Home"><i class="fa fa-home"></i></a>
+      <a [ngClass]="isUrl== 'x' ? 'active' : 'not_active'" href="/"><i class="fa fa-search"></i></a>
+      <a [ngClass]="isUrl== 'contact' ? 'active' : 'not_active'" href="/contact"><i class="fa fa-envelope"></i></a>
+      <a [ngClass]="isUrl== 'about' ? 'active' : 'not_active'"href="/about"><i class="fa fa-address-card"></i></a>
+      <a [ngClass]="isUrl== 'cars' ? 'active' : 'not_active'"href="/cars"><i class="fa fa-car"></i></a>
     </div>
-  </header>
+    <!-- end: Header -->
+
+
+
   <!-- end: Header -->
 
 

@@ -18,6 +18,8 @@ import { ListComponent } from './list/list.component';
 import { ProductComponent } from './product/product.component';
 import { CommonModule } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { CarsComponent } from './cars/cars.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ContactComponent } from './contact/contact.component';
     SearchComponent,
     ListComponent,
     ProductComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent,
+    CarsComponent
   ],
   imports: [
     BrowserModule,
