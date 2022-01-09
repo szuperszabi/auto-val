@@ -1,6 +1,22 @@
 <div class="container">
   <div class="row">
+    <h4>List of car brands 2022</h4>
+    <div class="portfolio-5-columns">
+      <!-- portfolio item -->
+      <div *ngFor="let product of products" class="portfolio-item reveal-effect">
+        <div class="portfolio-item-wrap">
+          <span class="portfolio-image" style="margin-left:10px;">
+            <img src="../../assets/images/{{product.image.localOptimized}}" style = "width:180px; height:180px"/>
+          </span>
+          <div class="portfolio-description">
+            <h3>{{product.name}}</h3>
+            <span>{{product.slug}}</span>
+          </div>
+        </div>
+      </div>
+      <!-- end: portfolio item -->
 
+    </div>
   </div>
 </div>
 

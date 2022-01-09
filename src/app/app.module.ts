@@ -20,6 +20,7 @@ import { CommonModule } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { CarsComponent } from './cars/cars.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CarsComponent } from './cars/cars.component';
     ProductComponent,
     ContactComponent,
     AboutComponent,
-    CarsComponent
+    CarsComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

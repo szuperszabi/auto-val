@@ -1,0 +1,57 @@
+<!-- Content -->
+<section id="page-content">
+  <div class="container">
+    <!-- post content -->
+    <!-- Page title -->
+    <div class="page-title">
+      <h1>Latest News</h1>
+      <div class="breadcrumb float-left">
+        <ul>
+          <li><a href="#">Home</a>
+          <li class=""><a href="#">Latest News</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end: Page title -->
+    <!-- Blog -->
+    <div id="blog" class="grid-layout post-1-columns m-b-30" data-item="post-item">
+      <!-- Post item-->
+      <div *ngFor="let x of news" class="post-item border">
+        <div class="post-item-wrap">
+          <div class="post-image">
+            <a href="#">
+              <img alt="" src="images/blog/12.jpg">
+            </a>
+            <span class="post-meta-category"><a href="">{{x.author}}</a></span>
+          </div>
+          <div class="post-item-description">
+            <span class="post-meta-date"><i class="fa fa-calendar-o"></i>{{x.publishedAt}}</span>
+            <span class="post-meta-comments"><a href=""><i class="fa fa-comments-o"></i>33 Comments</a></span>
+            <h2><a href="#">{{x.description}}
+            </a></h2>
+            <span><img src="{{x.urlToImage}}" alt=""></span>
+            <p>{{x.content}}</p>
+            <a href="#" class="item-link">Read More <i class="icon-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- end: Post item-->
+
+    </div>
+    <!-- end: Blog -->
+    <!-- Pagination -->
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item active"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
+    </ul>
+    <!-- end: Pagination -->
+  </div>
+  <!-- end: post content -->
+</section>
+<!-- end: Content -->

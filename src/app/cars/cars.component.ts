@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-cars',
@@ -8,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class CarsComponent implements OnInit {
-  constructor() {
+  products: any;
+  constructor(private httpClient: HttpClient) {
   }
 
   ngOnInit() {
+    this.httpClient.get('https://auto-val.com/server/car_data.php').subscribe(data => {
+      console.log(data);
+      this.products = data;
+    });
   }
-
 }
