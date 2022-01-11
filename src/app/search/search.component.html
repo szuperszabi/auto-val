@@ -62,13 +62,17 @@
     </div>
     <!--Countries-->
 
-    <!--
+<br>
     <label for="country">Country</label><br>
-    <select class="form-control" id="country">
-      <option> Europe</option>
-      <option>Romania</option>
+    <select formControlName="country" class="form-control" id="country">
+      <option value=""> <i class="flag flag-us"></i> Europe</option>
+      <option value="D"><i class="flag flag-us"></i> Germany</option>
+      <option value="F"><i class="flag flag-us"></i> France</option>
+      <option value="A"><i class="flag flag-us"></i> Austria</option>
+      <option value="E"><i class="flag flag-us"></i> Spain</option>
+      <option value="I"><i class="flag flag-us"></i> Italy</option>
     </select>
-    -->
+
 
   </div>
 </form>
@@ -121,6 +125,7 @@
             <tr>
               <td>{{carList.fuel}}</td>
               <td>{{carList.poluation}}</td>
+              <td>{{carList.country}}</td>
             </tr>
           </table>
 

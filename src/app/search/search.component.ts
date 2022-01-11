@@ -75,7 +75,8 @@ export class SearchComponent implements OnInit {
           priceFrom: '5500',
           priceTo: '',
           startYear: '2010',
-          endYear: ''
+          endYear: '',
+          country: ''
       });
       this.myForm.valueChanges.subscribe( value => {
           console.log(value);

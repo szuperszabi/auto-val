@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient} from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 
+let headers = new HttpHeaders();
+headers = headers.set('x-rapidapi-host', 'newscatcher.p.rapidapi.com')
+  .set('x-rapidapi-key', '4d422cca05msh0f15d5a7d5ddc2ap11aa60jsn21f75a314e58');
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
@@ -12,7 +15,8 @@ export class BlogComponent implements OnInit {
   news: any;
   ngOnInit() {
     this.httpClient.
-    get('https://newsapi.org/v2/everything?q=automotive&from=2021-12-09&sortBy=publishedAt&language=en&apiKey=ec3d50b58d554acaa244a9e4d943749c')
+    get('https://newscatcher.p.rapidapi.com/v1/search_free?q=auto&lang=en&media=True',
+      {headers})
       .subscribe(data => {
       console.log('szabi', data);
       const news0 = JSON.stringify(data);

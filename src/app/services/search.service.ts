@@ -22,7 +22,7 @@ export class SearchService {
     getList(formValue) {
       return this.http.get(this.baseUrl + '/listapi.php?make=' + formValue.value.carMake +
       '&model=' + formValue.value.model + '&fregfrom=' + formValue.value.startYear + '&fregto=' + formValue.value.endYear +
-      '&pricefrom=' + formValue.value.priceFrom + '&priceto=' + formValue.value.priceTo);
+      '&pricefrom=' + formValue.value.priceFrom + '&priceto=' + formValue.value.priceTo + '&country=' + formValue.value.country);
 
     }
     addDetailsService(url) {
